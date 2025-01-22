@@ -16,6 +16,8 @@
 \usepackage{enumitem}
 \usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{eurosym}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -65,21 +67,28 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
+      {#3} & {#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeeduSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} & {#4} \\
+      {#5}
+    \end{tabular*}
+}
 
 
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label = {}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
@@ -95,90 +104,132 @@
  \end{tabular*}
  
  
-\section{Experience}
+ 
+ \section{\textbf{Education}}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ 		{University of Connecticut}{August 2023 - May 2025}
+		 {Master of Engineering- Computer Science and Engineering;  GPA: 3.8/4.00}{Storrs, CT}
+		   \vspace{7pt}
+      { \newline{}\textit{\textbf{Courses:} Algorithms \& Complexity, Big Data Analytics, Natural Language Processing, CyberSecurity}}
+      
+ \resumeSubheading
+ 		{K L University}{August 2015 - May 2019}
+		 {Bachelor of Engineering- Electrical and Electronics Engineering;  GPA: 9.0/10.00}{Vijayawada, India}	
+		  \vspace{7pt}
+      {\newline{}\textit{\textbf{Courses:} Object-Oriented programming(Java), Computer Architecture, Software Engineering Principles }}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+ 
+ 
+\section{\textbf{Professional Experience}}
 
  \resumeSubHeadingListStart
  
-       \resumeSubheading{Full Stack Engineer - UCONN Health }{Jan 2024 - Present}
-    { UCONN School of Dental Medicine $|$ C\#, .NET,  Python, Django, React Native}{Farmington, CT}
+       \resumeSubheading{Software Engineer - UCONN Health }{January 2024 - Present}
+    {UCONN School of Dental Medicine $|$ C\#, .NET,  Python, Django, React Native}{Farmington, CT}
     \resumeItemListStart
-        \resumeItemexp {Spearheaded the development of a mobile app(\href{https://github.com/ramchandra3101/strip_frontend} striplens) using \textbf{React Native}, enhancing COVID-19 diagnostics accuracy by 95\% through real-time image processing and test line detection.}
-
-          \resumeItemexp{Engineered \textbf{REST APIs} with \textbf{Node.js} and \textbf{FastAPI}, reducing \href{https://github.com/ramchandra3101/strip_backend} backend response time from 30s to 10s, and facilitating seamless communication between the mobile app and HPC server.}
+   	 \resumeItemexp { Improved Lateral Flow Test (LFT) accuracy, achieved 90\% precision by developing \href{https://github.com/ramchandra3101/strip_frontend}{\textbf{StripLens}}, a \textbf{React-Native} mobile app with real-time image processing that handles 1000+ daily requests.}
+	  \resumeItemexp{Optimized backend performance reducing response time by 66\% from 30s to 10s by implementing REST APIs with \textbf{FastAPI} to streamline mobile apps and HPC server communications.}
+       % \resumeItemexp {Developed \href{https://github.com/ramchandra3101/strip_frontend}\textbf{\textbf{StripLens}},  a \textbf{React Native} mobile app processing 1000+ daily requests, implementing real-time image processing to measure COVID-19 test line intensities with 90\% precision. }
+       \resumeItemexp { Enhanced microscopy research capabilities with 500+ fluorescence images/hour  parallel processing speed by developing a full-stack system with \textbf{Django-REST backend}, and GPU accelerated OpenCV processing. }
+        
+         %\resumeItemexp{ Created a full-stack microscopy analysis system with \textbf{NextJS} frontend and \textbf{Django-REST} backend, achieving parallel image processing of 500+ fluorescence images/hour using OpenCV and GPU acceleration. }
+        
+        
+         
           
-          \resumeItemexp {Streamlined deployment using Docker, achieving a 50\% reduction in application downtime and improving scalability to handle over 1000 user requests per day}
+         % \resumeItemexp {Streamlined deployment processes and enhanced scalability using \textbf{Docker}, NGINX, RabbitMQ, \textbf{OAuth2} , and \textbf{AWS(IAM,EC2, S3)}, with troubleshooting to ensure efficient deployments.}
+         
           
-          \resumeItemexp{Automated PCR thermocycler operations by creating a Python program that calls .NET functions, reducing human intervention by 100\%. Improved diagnostic workflow efficiency by 30\%.}
+          \resumeItemexp{Achieved full experiment automation eliminating 100\% of manual PCR operations by creating a Python-based integration system with Bio-rad CFX software using .NET APIs.}
+          
       \resumeItemListEnd
 
  
-    \resumeSubheading{Senior Software Engineer -  SNCB- Belgian Train}{May 2022 - Jul 2023}
-    {Tata Consultancy Services $|$ React.js, Express, Node.js, PostgreSQL }{Hyderabad, India}
+    \resumeSubheading{Senior Software Engineer - SNCB International }{May 2022 - July 2023}
+    {Tata Consultancy Services $|$ React.js, Express, Node.js, CI/CD, Docker, K8s }{Hyderabad, India}
     \resumeItemListStart
         \resumeItemexp
-          {Implemented features for SNCB-NMBS  train ticket web app leveraging \textbf{React.js and Node.js serving over 4M users}. }
-          \resumeItemexp
-          {Designed scalable REST and GraphQL APIs using TypeScript, Node.js, Redis, and PostgreSQL.}
-          \resumeItemexp{Architected an  \textbf{AS Java System} to deal with XML documents generated by 50+ SAP Systems, reducing security incidents by 40\%.}
+          { Elevated platform security supporting 100K+ daily active users by implementing multi-factor authentication system combining OAuth 2.0 and biometric verification .}
+           \resumeItemexp{Scaled financial transaction system to process  \EUR{2M}+ daily transactions by leading payment gateway integration in collaboration with a 5-member team. .}
+         % \resumeItemexp
+         %\resumeItemexp {Implemented \textbf{Docker} containers, \textbf{Kubernetes} for container orchestration, and \textbf{CI/CD} pipelines in the project, incorporating \textbf{Ansible} and \textbf{Puppet} resulting in a 35\% reduction in deployment time while utilizing AWS and DevOps practices. }
+           \resumeItemexp{Modernized deployment infrastructure reducing deployment time by 35\% by orchestrating containerization with \textbf{Docker}, \textbf{Kubernetes}, and automated \textbf{CI/CD} pipelines using \textbf{Ansible} and \textbf{Puppet} on \textbf{AWS}. }
+         
+         
+         % \resumeItemexp{Collaborated with 5-member team to implement payment gateway integration, processing \EUR{2M}+ monthly transactions.}
+        %  \resumeItemexp{Drove migration from legacy system to microservices architecture, improving response times by 60\%.
+          %\resumeItemexp{Built real-time seat availability module reducing booking conflicts by 85\%.}
+          \resumeItemexp{Accelerated data retrieval speed achieving 40\% faster API response times by designing and implementing Redis caching Architectire .}
       \resumeItemListEnd
       
     \resumeSubheading
-		{Software Engineer  - Merck \& Co. }{July 2019 - April 2022}
+		{Software Engineer  - Merck Animal Health(mypet.com). }{July 2019 - April 2022}
 		{Cognizant Technology Solutions. $|$ Javascript, React, Django, SQL, Oracle, Linux, Docker}{Chennai, India}
 \resumeItemListStart
-        \resumeItemexp{Developed a secure and  \textbf{scalable backend} for an ERP system using the  \textbf{Django framework (Python)}, significantly enhancing performance and scalability, while integrating \textbf{RESTful APIs} and third-party applications.}
-         \resumeItemexp{ Converted design concepts and wireframes into intuitive application interfaces using HTML, CSS and ReactJS, following design patterns.}
+	\resumeItemexp{Expanded veterinary care accessibility connecting 10K+ pet owners with veterinarians by developing responsive web platform using reactJS and MaterialUI. }
+
+        %\resumeItemexp{Built responsive web application using \textbf{React.js} and Material-UI enabling 10K+ pet owners to connect with veterinary doctors. }
+        % \resumeItemexp{ Worked on real-time chat system using \textbf{Socket.IO} facilitating direct communication between pet owners and veterinarians.}
+            \resumeItemexp{ Improved appointment management efficiency eliminating manual notification processes by engineering a Node.JS system with \textbf{Nodemailer} integration for automatic email configuration.  }
+          % \resumeItemexp{ Designed an appointment scheduling system using \textbf{Node.js/ Express.js} with automated email notifications.}
+          \resumeItemexp{Optimized database performance improving query response time by 40\% by restructuring PostgreSQL schemas for profiles, medical records, and appointments with enhanced data validation. }
+          
+        %\resumeItemexp{Reorganized \textbf{PostgreSQL} schemas for profiles, medical records, and appointment management with data validation.}
         \resumeItemexp
-          {Played a key role in attaining noteworthy enhancements in performance by identifying and remedying bottlenecks at both instance and database(MySQL) tiers, which led to substantial reductions in runtime for over 100 background jobs.}
-        \resumeItemexp
-          {Created a Python script to facilitate the smooth transfer of change objects from the development environment to testing, quality, and production environments.}
+          {Streamlined development workflow contributing to 11-member teams's sprint goals by engaging in agile practices through bi-weekly sprints and daily standups.}
           
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 \vspace{-5pt}
+
+
+
  
- \section{Techncal Skills}
+ \section{\textbf{Techncal Skills}}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~ JavaScript, TypeScript, Python, C,  SQL, Bash(Linux, PowerShell)}
-	\resumeSubItem{Web Dev}{~~~~~~~React, Vue, Node.JS, Express, Django, React Native}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~Terraform, Jenkins, Kubernetes, Docker, Git, GitHub, PostgreSQL, MySQL, SQLite, NoSQL(MongoDB)}
-	\resumeSubItem{Cloud}{~~~~~~~~~~~~AWS: S3, ECS, CDK $|$ GCP: Kubernetes Engine, Container Registry $|$ Azure: App Service}
-	\resumeSubItem{Devops}{~~~~~~~~~~Infrastructure as Code(IaC), Continous Integration and Deployment(CI/CD)}
-	\resumeSubItem{Certifications}{~\href{https://www.credly.com/badges/f21dec56-8b41-499a-aebb-342a8c0dbf45/linked_in_profile}AWS Certified Cloud Practitioner(Issued 2024)}
+	\resumeSubItem{Languages~~~~~}{C++, JavaScript, TypeScript, Python, C,  SQL, Bash(Linux, PowerShell)}
+	\resumeSubItem{Web Dev~~~~~~~}{Next.Js, React, Vue, Node.JS, Express, Django, React Native}
+	\resumeSubItem{Tools~~~~~~~~~~~~}{Terraform, Jenkins, Kubernetes, Docker, Git, GitHub, PostgreSQL, MySQL, SQLite, NoSQL(MongoDB)}
+	\resumeSubItem{Cloud~~~~~~~~~~~}{AWS: S3, ECS, CDK $|$ GCP: Kubernetes Engine, Container Registry $|$ Azure: App Service}
+	\resumeSubItem{Devops~~~~~~~~~}{Infrastructure as Code(IaC), Continous Integration and Deployment(CI/CD)}
+	\resumeSubItem{Certifications~}{\href{https://www.credly.com/badges/f21dec56-8b41-499a-aebb-342a8c0dbf45/linked_in_profile}AWS Certified Cloud Practitioner(Issued 2024)}
 \resumeSubHeadingListEnd
 
-\vspace{-5pt}
+
 
 
 %-----------PROJECTS-----------------
 
-\section{Projects}
+\section{Academic Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Citi bike usage prediction at Manhattan-NYC}{Implemented an \textbf{RNN(LSTM+GRU)} model for predicting Citi bike Usage in Manhattan with \textbf{83\%} accuracy. Awarded 1st prize in the Cyberinfrastructure competition organized by the National Science Foundation(NSF) for Best ML Model and Analysis. (Jan 2024)}
+\resumeSubItem{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{Citi bike usage prediction at Manhattan-NYC}}{ Advanced urban mobility forecasting securing NSF competition's First Prize with 83\% prediction accuracy by developing hybrid RNN(LSTM,+GRU) model for Manhattan Citibike usage Analysis. }
 \vspace{2pt}
-\resumeSubItem{E-Commerce Website for Clothing}{Designed a website for the KLAD clothing store using ReactJS for the front end and Node.js with Express for the back end. Integrated Axios for communication and utilized Mongoose to connect MongoDB.  (Sept 2023)}
-\vspace{2pt}
-\resumeSubItem{Predicting NFL outcomes based on Madden ratings}{Developed a Python-driven ML model for predicting NFL game outcomes using datasets spanning the last 20 years. Enhanced model accuracy by 40\% by integrating curated datasets, with a specific focus on player injury information.(Oct 2023)}
-\vspace{2pt}
-\resumeSubItem{Real-time chat Application}{Real-time chat application using Node and React Native, leveraging \textbf{Websockets} for instant communication.Utilized \textbf{Redis} for efficient storage.(June 2023). }
+%\resumeSubItem{E-Commerce Website for Clothing}{Website for KLAD clothing store using ReactJS for the front end and Node.js with Express for the back end. Integrated Axios for communication and utilized Mongoose to connect MongoDB.  (Sept 2023)}
+
+\resumeSubItem{Predicting NFL outcomes based on Madden ratings}{Python-driven ML model for predicting NFL game outcomes using datasets spanning the last 20 years. Boosted model accuracy by 40\% by integrating curated datasets, with a specific focus on player injury information.}
+
+\resumeSubItem{Real-time chat Application}{Real-time chat application using Node and React Native, leveraging \textbf{Websockets} for instant communication.Utilized \textbf{Redis} for efficient storage. }
 
 
 
 
 %-----------EDUCATION-----------------
-\section{Education}
-    \resumeSubheading
-      {University of Connecticut}{August 2023 - May 2025}
-      {Master of Engineering- Computer Science and Engineering;  GPA: 3.45/4.00}{Storrs, CT}
-      \vspace{5pt}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Algorithms \& Complexity, Machine learning, Big Data Analytics, Data Mining}}}
-       \resumeSubheading
-      {K L University }{August 2015- May 2019}
-      {Bachelor of Engineering- Electrical and Electronics Engineering;  GPA: 9.00/10.00}{Vijayawada, India}
-      \vspace{5pt}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Object-Oriented programming(Java), Computer Organization and Architecture, C \& Data Structures }}} 
-      
+
+     % \section{Education}
+   % \resumeSubheading
+   %   {University of Connecticut}{August 2023 - May 2025}
+     % {Master of Engineering- Computer Science and Engineering;  GPA: 3.8/4.00}{Storrs, CT}
+    %  \vspace{5pt}
+      %{\scriptsize \footnotesize{\newline{}\textbf{Courses:} Algorithms \& Complexity, Machine learning, Big Data Analytics,Intro to CyberSecurity}}
+       %\resumeSubheading
+     % {K L University }{August 2015 - May 2019}
+      %{Bachelor of Engineering- Electrical and Electronics Engineering;  GPA: 9.00/10.00}{Vijayawada, India}
+     % \vspace{5pt}
+      %{\scriptsize  \footnotesize{\newline{}\textbf{Courses:} Object-Oriented programming(Java), Computer Organization and Architecture, C \& Data Structures }}
   
     
     
