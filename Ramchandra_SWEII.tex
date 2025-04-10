@@ -1,0 +1,343 @@
+
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+\usepackage{hyperref}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemexp}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} & {#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeeduSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} & {#4} \\
+      {#5}
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {#2 }\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label = {}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Ramachandra Yerramsetti}} & Email: \href{mailto:}{rcyerramsetti@protonmail.com}\\
+  \href{https://rcyerramsetti.com/}{Portfolio: https://rcyerramsetti.com/} & \href{https://www.linkedin.com/in/ramachandra-yerramsetti/}{LinkedIn/Ramachandra Yerramsetti}\\
+
+  \href{https://github.com/ramchandra3101}{Github: github.com/ramchandra3101}& (959)-232-0757 $|$  Hartford, CT \\
+ \end{tabular*}
+ 
+ \section{\textbf{Summary}}
+Full Stack Developer with 4+ years of experience in developing applications with JavaScript, Python, and Java. Skilled in building microservices, streaming APIs with Kafka, Native mobile apps, continuous integration with Jenkins and Github Actions.
+\section{\textbf{Education}}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ 		{University of Connecticut}{August 2023 - May 2025}
+		 {Master of Engineering- Computer Science and Engineering;  GPA: 3.8/4.00}{Storrs, CT}
+		   \vspace{7pt}
+      { \newline{}\textbf{Coursework:} Algorithms \& Complexity, Advanced Computer Networks, Natural Language Processing  }
+      
+ \resumeSubheading
+ 		{K L University}{August 2015 - May 2019}
+		 {Bachelor of Engineering- Electrical Engineering;  GPA: 9.0/10.00}{Vijayawada, India}	
+		  \vspace{7pt}
+      {\newline{}\textbf{Coursework:} Object-Oriented programming (Java), Computer Architecture, Discrete Mathematics}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+ 
+
+  
+\section{\textbf{Professional Experience}}
+
+ \resumeSubHeadingListStart
+ 
+       \resumeSubheading{Full Stack Developer}{January 2024 - Present}
+    {UCONN Health $|$  Python, Typescript(React Native), Django, AWS Lambda}{Hartford, CT}
+    \resumeItemListStart
+    
+
+    	
+	\resumeItemexp{Developed a native mobile application, \textbf{\underline{\href{https://github.com/ramchandra3101/strip_frontend}{StripLens}}}, achieving 90\% accuracy in extracting data from Lateral Flow Test kits by implementing \textbf{REST APIS} in \textbf{Django} for image processing with open-source libraries, eliminating the need for commercial APIs.}
+	\resumeItemexp{Designed serverless image processing pipeline using \textbf{React Native(iOS ,Android)}  for real-time capture, \textbf{FastAPI} for high-performance data transmission, \textbf{AWS (S3, Lambda)} for secure storage and automated cleanup, optimizing storage costs by 80\% by choosing storage class \textbf{S3 One Zone - Infrequent Access.}}
+	
+	    \resumeItemexp{Developed a Python automation script to call \textbf{ C\#} functions, reducing manual intervention by 80\% and enabling smooth execution of 100+ daily PCR runs.}
+    \resumeItemexp{Refactored Bio-Rad CFX Maestro software by modifying \textbf{.NET Core}-based DLLs and WCF service bindings, improved logging  40\%.}
+    
+	
+   	 %\resumeItemexp { Improved Lateral Flow Test (LFT) accuracy, achieved 90\% precision by developing \href{https://github.com/ramchandra3101/strip_frontend}{\textbf{StripLens}}, a \textbf{React-Native} mobile app with real-time image processing that handles 1000+ daily requests.}
+	 % \resumeItemexp {Developed \href{https://github.com/ramchandra3101/strip_frontend}\textbf{\textbf{StripLens}},  a \textbf{React Native} mobile app processing 100+ daily requests of Lateral flow strip images, implementing real-time image processing to measure COVID-19 test line intensities with 90\% precision. }
+	   %\resumeItemexp{Developed \textbf{\href{https://github.com/ramchandra3101/strip_frontend}StripLens}, A mobile app that analyzes COVID-19 test results by scanning lateral flow strips, app processes over 10K images daily and detects test line intensity with 90\% accuracy. }
+	   	  %\resumeItemexp{Optimized backend performance reducing response time by 66\% from 30s to 10s by implementing REST APIs with \textbf{NodeJS} to streamline mobile apps and HPC server communications.}
+       
+       %\resumeItemexp {Enhanced fluorescence detector application  with 500+ images/hour parallel processing via \textbf{Django-REST} backend and optimized \textbf{NoSQL} schema with efficient indexing for metadata storage along with \textbf{AWS S3} for storing image files. }
+        
+         %\resumeItemexp{ Created a full-stack microscopy analysis system with \textbf{NextJS} frontend and \textbf{Django-REST} backend, achieving parallel image processing of 500+ fluorescence images/hour using OpenCV and GPU acceleration. }
+        
+        
+         
+          
+         % \resumeItemexp {Streamlined deployment processes and enhanced scalability using \textbf{Docker}, NGINX, RabbitMQ, \textbf{OAuth2} , and \textbf{AWS(IAM,EC2, S3)}, with troubleshooting to ensure efficient deployments.}
+         
+          
+         % \resumeItemexp{Achieved full experiment automation eliminating 100\% of manual PCR operations by creating a \textbf{Python} based integration system with Bio-rad CFX software using .NET APIs.}
+          
+      \resumeItemListEnd
+
+ 
+    \resumeSubheading{Software Engineer }{May 2022 - July 2023}
+    {National railway company of Belgium(SNCB)$|$  Java EE,  Spring Boot, Apache Tomcat}{Hyderabad, India}
+    \resumeItemListStart
+    		
+ 
+    	\resumeItemexp{Collaborated with a 5-member team to develop Excursion Ticket booking platform using \textbf{ JAVA EE microservices}, with async processing and API rate limiting to handle traffic.}
+    	
+        %\resumeItemexp{ Implemented multi-factor authentication with biometrics (iOS LAContext, Android BiometricPrompt) for 100,000+ users, achieving a 98\% authentication success rate and reducing unauthorized access by 99.9\%.}
+       
+       % \resumeItemexp{Implemented unit testing using \textbf{Junit} and \textbf{Mockito},  enhancing code reliability and achieving a 30\% reduction in bugs within 3 months, leading to smoother deployment cycles.}
+         \resumeItemexp{Implemented user management and authentication using \textbf{JSON Web Token}, optimized session management with
+Redis cache, reduced session handling time by 40\%, and improved user login efficiency.}
+         
+        
+          % \resumeItemexp{Scaled financial transaction system to process  \EUR{2M}+ daily transactions by leading payment gateway integration in collaboration with a 5-member team.}
+         % \resumeItemexp{}
+        % \resumeItemexp {Implemented \textbf{Docker} containers, \textbf{Kubernetes} for container orchestration, and \textbf{CI/CD} pipelines in the project, incorporating \textbf{Ansible} and \textbf{Puppet} resulting in a 35\% reduction in deployment time while utilizing AWS and DevOps practices. }
+           %\resumeItemexp{Modernized deployment infrastructure reducing deployment time by 35\% by orchestrating containerization with \textbf{Docker}, \textbf{Kubernetes}, and automated \textbf{CI/CD} pipelines using \textbf{Ansible} and \textbf{Puppet} on \textbf{AWS}. }
+         
+         
+          %\resumeItemexp{Collaborated with 5-member team to implement payment gateway integration, processing \EUR{2M}+ monthly transactions.}
+        %  \resumeItemexp{Drove migration from legacy system to microservices architecture, improving response times by 60\%.
+          %\resumeItemexp{Built real-time seat availability module reducing booking conflicts by 85\%.}
+          %\resumeItemexp{Accelerated data retrieval speed achieving 40\% faster API response times by designing and implementing \textbf{Redis} caching.}
+                \resumeItemListEnd
+      
+    \resumeSubheading
+		{Full Stack Developer }{July 2019 - April 2022}
+		{Merck \& Co.(Animal Health) $|$  Java, Microservices, Azure, REST APIs, Grafana}{Chennai, India}
+\resumeItemListStart
+	 \resumeItemexp{Deployed and monitored \textbf{20+ Microservices} on Azure, cutting downtime by 35\% using proactive alerts from \textbf{Azure Application Insights}}
+	  \resumeItemexp{Led the migration of a 2TB IBM DB2 database to \textbf{Azure SQL Managed Instance} using SSMA, achieving a 35\% improvement in query performance while adhering strict schema conversion.}
+	\resumeItemexp{Architected and implemented a component library for mypet.com using \textbf{ReactJS} with custom hooks, \textbf{context API}, and \textbf{TypeScript} interfaces, resulting in 40\% code reusability across features.}
+	\resumeItemexp{Achieved 93\% code coverage, 17\% improvement over previous implementations while implementing jest unit tests and cypress E2E testing  by employing Atomic design methodology}
+ 
+
+
+       % \resumeItemexp{Built responsive web application using \textbf{React.js} and Material-UI enabling 10K+ pet owners to connect with veterinary doctors. }
+        % \resumeItemexp{ Worked on real-time chat system using \textbf{Socket.IO} facilitating direct communication between pet owners and veterinarians.}
+          
+          
+
+          
+       % \resumeItemexp{Reorganized \textbf{PostgreSQL} schemas for profiles, medical records, and appointment management with data validation.}
+        %\resumeItemexp {Streamlined development workflow contributing to 11-member teams's sprint goals by engaging in agile practices through bi-weekly sprints and daily standups.}
+          
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+ \section{\textbf{Academic Projects}}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\href{https://github.com/ramchandra3101/FinanceTracker}{Gen AI Finance Tracker}} $|$ {TypeScript(Next.JS,NodeJS), PostgreSQL, AWS Bedrock}}{} 
+\resumeItemListStart
+\resumeItemexp{Developed T5-Base integrated agent-based full-stack financial analysis platform with advanced RAG implementation}
+\resumeItemexp{Integrated Financial Modeling techniques for investment analysis with intuitive visualizations for complex data}
+%\resumeItemexp{Designed responsive UI components that effectively present financial insights from multiple data sources}
+\resumeItemListEnd
+
+% Citi bike usage prediction
+\resumeProjectHeading
+{\href{https://github.com/ramchandra3101/Cyberinfrastructure-competition}{Citi bike usage prediction at Manhattan-NYC} $|$ {Python, LSTM, GRU}}{}
+\resumeItemListStart
+\resumeItemexp{Led development of hybrid RNN(LSTM+GRU) model for urban mobility forecasting, achieving 83\% prediction accuracy}
+%\resumeItemexp{Implemented semantic search techniques to extract meaningful patterns from complex transportation datasets}
+\resumeItemexp{Won First Prize in NSF competition by effectively analyzing and visualizing urban mobility patterns}
+\resumeItemListEnd
+
+
+% Entity Resolution System - added based on Pavilion job description
+
+
+
+% Dog-Breed Detector
+\resumeProjectHeading
+{\href{https://github.com/ramchandra3101/Dog_breed_detection}{Dog-Breed Detector} $|$ {React Native, TensorFlow, Computer Vision}}{}
+\resumeItemListStart
+\resumeItemexp{Built full-stack mobile application with Django backend and React Native frontend}
+%\resumeItemexp{Engineered document understanding capabilities that achieved 95\% accuracy in classification tasks}
+\resumeItemexp{Optimized model for mobile deployment, reducing inference time to 2s while maintaining high accuracy}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{\textbf{Skills}}
+\resumeSubHeadingListStart
+\resumeSubItem{Programming}{ Python, SQL,  JavaScript, TypeScript, Java,  Next.js, React,  Node.js,}
+%\resumeSubItem{Technologies}{AI/ML (smolLM2, Llama3, OpenCV, TensorFlow, PyTorch), AWS, GCP, Azure, Docker, Kubernetes}
+\resumeSubItem{Databases}{Oracle, PostgreSQL, MySQL, SQLite, MongoDB, Redis}
+\resumeSubItem{DevOps}{CI/CD, Github Actions, Terraform, Jenkins, Apche Kafka}
+\resumeSubItem{Certifications}{\href{https://www.credly.com/badges/f21dec56-8b41-499a-aebb-342a8c0dbf45/linked_in_profile}{AWS Certified Cloud Practitioner (2024)}}
+\resumeSubHeadingListEnd
+
+
+
+\vspace{-5pt}
+
+
+\vspace{-5pt}
+ 
+ 
+
+%-----------PROJECTS-----------------
+
+
+
+
+
+
+%-----------EDUCATION-----------------
+
+     % \section{Education}
+   % \resumeSubheading
+   %   {University of Connecticut}{August 2023 - May 2025}
+     % {Master of Engineering- Computer Science and Engineering;  GPA: 3.8/4.00}{Storrs, CT}
+    %  \vspace{5pt}
+      %{\scriptsize \footnotesize{\newline{}\textbf{Courses:} Algorithms \& Complexity, Machine learning, Big Data Analytics,Intro to CyberSecurity}}
+       %\resumeSubheading
+     % {K L University }{August 2015 - May 2019}
+      %{Bachelor of Engineering- Electrical and Electronics Engineering;  GPA: 9.00/10.00}{Vijayawada, India}
+     % \vspace{5pt}
+      %{\scriptsize  \footnotesize{\newline{}\textbf{Courses:} Object-Oriented programming(Java), Computer Organization and Architecture, C \& Data Structures }}
+  
+    
+    
+	    
+
+
+
+
+
+
+%\vspace{2pt}
+%\resumeSubItem{Drag-n-drop machine learning learning environment (Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
+%\vspace{2pt}
+%\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
+%\resumeSubHeadingListEnd
+%\vspace{-5pt}
+%\section{Publications}
+%\resumeSubHeadingListStart
+%\resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+%\vspace{2pt}
+%\resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
+
+
+
+%%-----------Awards-----------------
+%\section{Honors and Awards}
+%\begin{description}[font=$\bullet$]
+%\item {Awarded title of Intel Software Innovator - May, 2019}
+%\vspace{-5pt}
+%\item {Second Runner's Up at TCS EngiNx Engineering Project Innovation Content - September, 2018 }
+%\vspace{-5pt}
+%\item {Runner's Up at Facebook Developers Circle Hackathon - August, 2017}
+
+%\end{description}
+
+%\vspace{-5pt}
+%\section{Volunteer Experience}
+%  \resumeSubHeadingListStart
+%	\resumeSubheading
+   % {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+  %  {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+%\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+ %   \resumeSubheading
+  %  {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+  %  {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+
+%\resumeSubHeadingListEnd
+
+\end{document}
