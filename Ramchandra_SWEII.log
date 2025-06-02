@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.5)  6 APR 2025 08:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.5)  11 APR 2025 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -304,9 +304,9 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 111.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 142.
+(Font)              <9> on input line 136.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 142.
+(Font)              <6> on input line 136.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -325,7 +325,7 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Ramchandra_SWEII.out' has not changed.
-(rerunfilecheck)             Checksum: 17E89681ED2F321A08F91F2E8AB07F67;531.
+(rerunfilecheck)             Checksum: BF47A630BDF822B160B175E7EC3F18EE;531.
  ) 
 Here is how much of TeX's memory you used:
  9503 strings out of 474116
@@ -334,7 +334,7 @@ Here is how much of TeX's memory you used:
  31761 multiletter control sequences out of 15000+600000
  562254 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,411b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,405b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -342,10 +342,10 @@ usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on Ramchandra_SWEII.pdf (1 page, 119909 bytes).
+Output written on Ramchandra_SWEII.pdf (1 page, 118388 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
