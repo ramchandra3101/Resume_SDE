@@ -1,0 +1,272 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+ \usepackage{fontawesome}
+ 
+ \ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=1em, itemsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1em, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://rcyerramsetti.com/}  {\Large Ramachandra Yerramsetti }} \small \faLinkedin& \small{ \faEnvelope} \href{mailto:rcyerramsetti@protonmail.com}{rcyerramsetti@protonmail.com}\\
+	{Software Engineer} &  {Hartford, CT, 06103}\\
+  \href{https://rcyerramsetti.com/}{rcyerramsetti.com}  \small{\faLink} & Mobile: \href{tel:+19592320757}{+1-959-232-0757} \\
+  
+\end{tabular*}
+
+\section{Summary}
+
+Software Engineer with 4+ years of experience designing and delivering backend services, database migrations, and cloud-based architectures on AWS. Strong in REST API development, PostgreSQL optimization, event-driven systems, Terraform-based IaC, and real-time notification pipelines.
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+   \resumeSubheading
+      {Software Engineer}{Hartford, CT}
+      {Infosys Public Services(DOL-New Jersey)}{June 2025 -- Present}
+      \resumeItemListStart
+       \resumeItem{NJ Wagehub}
+          {Delivered 20+ full-stack features in 4 months by designing FastAPI based REST APIs, updating DTOs, and implementing PostgreSQL schema changes using Piccolo migrations in a team of 5, enabling faster rollout of contractor and payroll workflows across the NJ Prevailing Wage Hub.}
+       \resumeItem{Notification System}
+          {Implemented payroll and system alerts by building an AWS SNS with Lambda notification pipeline, ensuring contractors and public bodies receive timely updates and developers receive automated Slack alerts for production and development issues.}
+      \resumeItem{UI Development}{Translated wireframe requirements into production-ready React components and integrated them with backend APIs.}          
+                    %\resumeItem{Frontend fix}{Delivered \textbf{Node.js 22 LTS upgrade} for the entire Next.js frontend within 3 days, fixing breaking changes while maintaining 100\% passing UI tests and uninterrupted CI/CD builds.}       
+ \resumeItemListEnd
+    %\resumeSubheading
+   %   {Google}{Mountain View, CA}
+    %%  \resumeItemListStart
+      %  \resumeItem{TensorFlow}
+      %    {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
+      %  \resumeItem{Apache Beam}
+        %  {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+     % \resumeItemListEnd
+% --------Multiple Positions Heading------------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+%-------------------------------------------
+    \resumeSubheading
+     {Software Engineer}{Farmington, CT}
+     {UCONN Health}{June 2024 -- May 2025}
+      \resumeItemListStart
+       \resumeItem{Computer Vision}
+          {Achieved 95\% classification accuracy compared to manual lateral flow reader results by developing a serverless \textbf{Django} backend that processed captured strip images using custom PyTorch models on AWS Lambda.}
+       \resumeItem{Open-Source Libraries}
+          {Eliminated \$12K/year in computational costs by building custom background removal and strip isolation APIs using open-source libraries such as OpenCV and CarveKit for LFT image analysis.}
+          %\resumeItem{Scalability}
+          %{Architected a scalable serverless pipeline using AWS Lambda and S3 event triggers to process 20 LFT strip images concurrently ($\approx $7s each), integrating SQS for retry handling and SNS for experiment status notifications, ensuring high throughput and fault tolerance}
+      \resumeItem{Integration}
+         {Interfaced with Bio-Rad’s Windows-based PCR application by using \textbf{pythonnet} to call underlying .NET APIs from Python, enabling real-time two-way communication between the machine and backend service.}
+        %\resumeItem{Automation}
+         % {Developed a FastAPI service to control experiments with precisely timed command dispatch and 5-second interval updates, achieving 100\% automation while maintaining hardware safety through strict delay management}
+        %\resumeItem{Dev Environment}
+       %   {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+        %\resumeItem{Data Warehousing}
+      %    {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
+       % \resumeItem{Recommendations}
+         % {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
+      %  \resumeItem{Content Discovery}
+        %  {Improved content discovery by building a new onboarding experience on coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
+     %   \resumeItem{Course Dashboards}
+         % {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer}{Hyderabad, India}
+      {TATA Consultancy services(Client: Belgium Train)}{May 2022 -- July 2023}
+      \resumeItemListStart
+       \resumeItem{Microservices Architecture}
+          {Developed Backend using \textbf{FastAPI} and \textbf{Python} to support user mobility features, integrating REST APIs and event-driven workflows to ensure platform responsiveness.}
+         \resumeItem{Frontend Devlopment} {Created and maintained frontend components using \textbf{React} with strong test coverage via Jest and Cypress improving UI reliability by 25\%.}
+	\resumeItem{Documentation}{Documented RESTful APIs using \textbf{Swagger/OpenAPI}, improving onboarding time for new developers and integration}
+      %\resumeItem{Cloud Migration}
+      %   {Migrated legacy on-prem workloads to \textbf{Azure Kubernetes Service (AKS)} and Azure App Service, reducing infrastructure costs by 25\% and improving deployment time by 40\%.}
+       %	\resumeItem{Test Driven Development}{Designed and tested frontend forms with \textbf{ReactJS (v16)} (TypeScript), Material UI, React Testing Library, and Jest reducing code complexity and ensuring consistent UI/UX standards across components.}
+	%\resumeItem{State Management}{Optimized state management with \textbf{Redux} Persist and improved form validation with Formik + Yup, enhancing UI and NoSQL (MongoDB) database reliability through refactoring.}
+	%\resumeItem{Version Control}{Collaboration using Atlassian tools (Confluence, Jira, Bitbucket) for managing user stories, and version control resulting in 2x faster issue resolution.}
+%\resumeItem{Continuous Deployment }{Deployed containerized microservices with Docker and RabbitMQ on AWS, optimizing CI/CD workflows and reducing deployment errors by 30\%.}
+%\resumeItem{Agile Delivery \& Collaboration}{Participated in Agile methodologies, including sprint planning and retrospectives, and collaborated with cross-functional teams to ensure timely feature delivery and bug fixes.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer }{Chennai, India}
+      {Cognizant Technology Solutions(Client: Merck \& Co)} {June 2019 -- Apr 2022}
+      \resumeItemListStart
+        \resumeItem{Newsletter Subscription}
+         {Contributed to a 5-member team to develop a cloud-native newsletter system using \textbf{Apache Kafka, and RabbitMQ}, integrating email APIs (Amazon SES) and deploying on AWS, enabling 5M+ personalized emails daily with 99.99\% uptime and supporting A/B testing for subject line performance.}
+       % \resumeItem{Products Page Frontend}
+         % {Developed a reusable React component library for product display pages, integrating data from SAP ERP through REST and \textbf{GraphQL} APIs, and improving code reusability by 40\% across multiple customer-facing frontends.}
+         % \resumeItem{Testing \& Monitoring}
+         % {Implemented\textbf{ Junit} for testing, Splunk for  API monitoring and usage traceability in production.}
+          \resumeItem{Reusable Components}{Modernized Merck Animal health products page migrating the UI from CoffeeScript to \textbf{ReactJS}
+(JavaScript ES6) for modular programming, improving code reusability by 15\%.}
+         % \resumeItem{Backend Integration}{Deployed \textbf{AWS RDS with MySQL}, utilizing JDBC with Java and \textbf{Spring Boot} and conducted performance load
+% testing with JMeter, Postman, and Mocha for 10,000 users with and without database connection pooling.}
+         % \resumeItem{Containerization}{Implemented \textbf{Docker} containers, \textbf{Kubernetes} for container orchestration, and \textbf{CI/CD} pipelines in the project, incorporating Ansible and Puppet resulting in a 35\% reduction in deployment time while utilizing AWS and DevOps practices.}
+          %\resumeItem{Authentication}{Implemented secure authentication using \textbf{JWT} and Redis caching, cutting session handling time by 40\% and improving login reliability across services.}
+         % \resumeItem{Agile methodologies}{Contributed to analysis, design, and implementation of project modules using Agile (Scrum) methodology, reducing the backlog by 40\% within six months. Deployed Git, Maven, Jenkins, and \textbf{Splunk}, reducing integration issues.}
+          
+          
+          
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+  
+  
+\section{Skills}
+ \resumeItemListStart
+  \resumeItem{Programming Languages}{Typescript, Python, Java}
+  %\resumeItem{Web Development} Java EE (SP, Servlets), Spring Framework (Core, MVC), Spring Boot, Hibernate ORM, JPA, OOPs, Microservices, RESTful APIs, JUnit, Mockito, Apache Tomcat}
+  \resumeItem{Web Development}{React, NextJs, Vue.js, RESTful API, Node.js, Bun, CI/CD, Github Actions, RabbitMQ}
+  \resumeItem{Databases}{PostgreSQL, MongoDB, DynamoDB, Cassandra, Chroma}
+  %\resumeItem{Tools}{Git, GitHub, Maven, Swagger, Postman, Log4j, Intelli) I}
+  %\resumeItem{Certifications}{AWS Cloud Practitioner, Professional Data Engineer-GCP}
+ \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+  %\resumeSubHeadingListStart
+  %  \resumeSubItem{NYCIntellinews \href{https://github.com/belanasaikiran/NYIntelliNews}{\faGithub}}
+     % {AI-generated video news summaries using LLaMA4 and Tavus in 24 hours at Llamacon2025.}
+    %\resumeSubItem{ExpenseTrack.AI \href{https://github.com/ramchandra3101/FinanceTracker}{\faGithub}}
+    % {Expense Tracker with MCP chatbot provide personalized financial insights based on expenses.}
+    %\resumeSubItem{Dog breed Detector \href{https://github.com/ramchandra3101/Dog_breed_detection}{\faGithub}}
+    % {Mobile application for dog breed detection with captured or uploaded image.}
+   %\resumeSubItem{AI Hacakthon \href{https://github.com/ramchandra3101/RIT_AI_From}{\faGithub}}
+      %{Developed a scalable handwritten form extractor within 24 hours at  \href{https://www.youtube.com/live/ia1Ee2U0DO8?t=300s}{AI for good Hacakthon \faYoutube}.}
+       %\resumeSubItem{Personal Website \href{https://github.com/ramchandra3101/ramchandra3101.github.io}{\faGithub}}
+      %{Next.js frontend with Contentlayer,  GitHub Actions for continuous deployment.}
+  
+    
+ % \resumeSubHeadingListEnd
+
+  
+ 
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {Master of Engineering in Computer Science; GPA: 3.81}{Aug 2023 -- May 2025}
+    %\resumeSubheading
+     %{K L University}{Vijayawada, India}
+     % {Bachelor of Engineering in Electrical and Electronics; GPA: 3.54 (8.7/10.0)}{Aug 2015 -- July 2019}
+  \resumeSubHeadingListEnd
+  
+
+%\section{Cloud Certifications}
+% \resumeItemListStart
+%  \resumeItem{AWS Cloud Practitioner}{Issued 2024}
+ % \resumeItem{Professional Data Engineer-GCP}{Issued 2025}
+  %\resumeItemListEnd
+
+%
+%--------SKILLS------------
+%\section{Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
